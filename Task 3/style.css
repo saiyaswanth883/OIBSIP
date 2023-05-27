@@ -9,13 +9,6 @@
 	box-sizing: border-box;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
-body{
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	color: #000;
-	background-color: var(--blue);
-}
 header{
 	padding: 2rem 1rem;
 	max-width: 800px;
@@ -27,6 +20,13 @@ header h1{
 	font-weight: 300;
 	color: var(--darkest);
 	margin-bottom: 1rem;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #000;
+	background-color: var(--blue);
 }
 input,button{
 	appearance: none;
@@ -52,12 +52,12 @@ input,button{
 #task-submit{
 	color: var(--green);
 	font-size: 1.25rem;
-	font-weight: 700;
+	font-weight: 750;
 	background-color: var(--green);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: pointer;
-	transition: 0.4s;
+	transition: 0.5s;
 }
 main{
 	flex: 1 1 0%;
@@ -70,7 +70,7 @@ main{
 }
 .task-list h2{
 	font-size: 1.5rem;
-	fzont-weight: 300;
+	font-weight: 300;
 	color: var(--darkest);
 	margin-bottom: 1rem;
 }
