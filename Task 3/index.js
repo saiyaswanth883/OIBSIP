@@ -20,10 +20,10 @@ window.addEventListener('load', () => {
 		task_actions_element.classList.add('actions');
 		const task_edit_element = document.createElement('button');
 		task_edit_element.classList.add('edit');
-		task_edit_element.innerText = 'Edit';
+		task_edit_element.innerText = 'EDIT';
 		const task_delete_element = document.createElement('button');
 		task_delete_element.classList.add('delete');
-		task_delete_element.innerText = 'Delete';
+		task_delete_element.innerText = 'DELETE';
 		task_actions_element.appendChild(task_edit_element);
 		task_actions_element.appendChild(task_delete_element);
 		task_element.appendChild(task_actions_element);
@@ -31,11 +31,11 @@ window.addEventListener('load', () => {
 		input.value = '';
 		task_edit_element.addEventListener('click', (e) => {
 			if (task_edit_element.innerText.toLowerCase() == "edit") {
-				task_edit_element.innerText = "Save";
+				task_edit_element.innerText = "SAVE";
 				task_input_element.removeAttribute("readonly");
 				task_input_element.focus();
 			} else {
-				task_edit_element.innerText = "Edit";
+				task_edit_element.innerText = "EDIT";
 				task_input_element.setAttribute("readonly", "readonly");
 			}
 		});
